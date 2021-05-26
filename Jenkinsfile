@@ -1,6 +1,6 @@
 node{
 	stage('Pull'){
-		git url: 'https://github.com/cabral85/udemy-aula-deploy.git'
+		git url: 'https://github.com/atoumdesign/udemy-aula-deploy.git'
 	}
 	stage('Build'){
 		sh "mvn clean package -DskipTests"
