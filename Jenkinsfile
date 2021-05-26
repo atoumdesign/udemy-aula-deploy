@@ -3,7 +3,7 @@ node{
 		git url: 'https://github.com/cabral85/udemy-aula-deploy.git'
 	}
 	stage('Build'){
-		sh "/u01/maven/bin/mvn clean package -DskipTests"
+		sh "mvn clean package -DskipTests"
 	}
 	stage('Move'){
 		sh "cp -rf target/testeweb.war /data"
